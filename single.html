@@ -13,8 +13,7 @@
 <body class="single-post">
     <div w3-include-html="header.html"></div> 
     <div class="container">
-        <div class="row">
-            <div class="wrapper">
+        <div class="row wrapper">
                 <main>
                     <article>
                         <img src="images/blog-post.jpg" alt="Article Picture">
@@ -184,14 +183,26 @@
                     <div class="leave-comment">
                         <h5>leave a comment</h5>
                         <form>
-                            <input type="file" name="file" id="file">
+                            <div class="comment">
+                                <label>
+                                    <input type="file" name="file" id="file">
+                                    <div class="upload-photo">
+                                        <i class="fa fa-camera"></i>
+                                    </div>
+                                </label>
+                                <div class="content">
+                                    <p class="time">2025-05-12 14:06</p>
+                                    <input placeholder="Name" type="text" name="name" id="name">
+                                    <textarea placeholder="Comment" name="comment" id="comment"></textarea>
+                                </div>
+                            </div>
+                            <button>Send</button>
                         </form>
                     </div>
                 </main>
                 <aside>
-                    
+                    <div w3-include-html="sidebar.html"></div> 
                 </aside>
-            </div>
         </div>
     </div>
     

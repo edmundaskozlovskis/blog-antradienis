@@ -277,6 +277,8 @@ body {
 
     .single-post .wrapper {
         margin: 70px 0;
+        align-items: normal;
+        gap: 30px;
     }
     .single-post main {
         width: 75%;
@@ -319,7 +321,8 @@ body {
     .comments-list {
         margin-top: 90px;
     }
-    .comments-list h5 {
+    .comments-list h5,
+    .leave-comment h5 {
         color: #656d78;
         text-transform: uppercase;
         font: 18px 'Fjalla One', sans-serif;
@@ -344,6 +347,120 @@ body {
     .comments-list .replay {
         margin: 30px 0 30px 105px;
     }
+    .leave-comment input[type='file'] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    .leave-comment .comment {
+        display: flex;
+        gap: 30px;
+    }
+    .leave-comment .upload-photo {
+        width: 70px;
+        height: 70px;
+        border: 1px dashed #ccd0d9;
+        text-align: center;
+        line-height: 70px;
+        color: #ccd0d9;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .leave-comment .upload-photo:hover {
+        color: #aab2bd;
+        border-color: #aab2bd;
+    }
+    .leave-comment .content {
+        width: 100%;
+    }
+    .leave-comment .content input {
+        border: 1px dashed #ccd0d9;
+        padding: 4px 20px;
+        display: block;
+        border-radius: 3px;
+        margin: 4px 0 20px;
+    }
+    .leave-comment .content textarea {
+        border: 1px dashed #ccd0d9;
+        padding: 7px 20px;
+        display: block;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 18px;
+        resize: none;
+        min-height: 100px;
+    }
+    .leave-comment button {
+        float: right;
+        margin-top: 20px;
+        border: 1px solid var(--link-color);
+        color: var(--link-color);
+        background-color: transparent;
+        font: 12px 'Fjalla One', sans-serif;
+        text-transform: uppercase;
+        transition: 0.3s;
+        padding: 4px 38px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .leave-comment button:hover {
+        color: var(--content-background-color);
+        background-color: var(--link-color);
+    }
+
+/* aside style */
+
+.sidebar-list,
+.sidebar-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.sidebar-list input {
+    border: 1px solid #e6e9ee;
+    padding: 4px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    height: 30px;
+    margin-right: -5px;
+    width: calc( 100% - 50px);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.sidebar-list button {
+    color: var(--content-background-color);
+    background-color: var(--link-color);
+    border-color: var(--link-color);
+    border-radius: 3px;
+    width: 50px;
+    height: 30px;
+    font-size: 13px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sidebar-list button:hover {
+    background-color: #434a54;
+    border-color: #434a54;
+}
+.sidebar-list > li {
+    margin-bottom: 30px;
+}
+.sidebar-list h1 {
+    color: var(--content-background-color);
+    text-transform: uppercase;
+    background-color: #656d78;
+    height: 50px;
+    padding: 0 30px;
+    margin: 0;
+    font: 16px / 50px 'Fjalla One', sans-serif;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
 /* footer block styling */
 footer {
